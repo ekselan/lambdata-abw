@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-pip install ______________
+pip install -i https://test.pypi.org/simple/ lambdata-abw==1.2
 ```
 
 ## Usage
