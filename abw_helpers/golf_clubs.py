@@ -10,7 +10,7 @@ class GolfClub():
     def choose(self):
         print('Grab the golf club')
 
-    @staticmethod
+    # @staticmethod
     def swing(self):
         print('Swing the golf club')
 
