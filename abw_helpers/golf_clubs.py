@@ -8,10 +8,11 @@ class GolfClub():
         brand: str
             example: 'TaylorMade'
     """
+
     def __init__(self, hand, brand):
         self.hand = hand
         self.brand = brand
-    
+
     @property
     def choose(self):
         print(f'Grab the {self.hand} hand {self.brand} club')
@@ -19,6 +20,7 @@ class GolfClub():
     @staticmethod
     def swing():
         print(f'Grib it and rip it')
+
 
 if __name__ == "__main__":
 
