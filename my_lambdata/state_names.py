@@ -4,4 +4,4 @@ from pandas import DataFrame
 # FL -> Florida, etc
 
 df = DataFrame(['abbrev':['CA','CO','CT','DC','TX']])
-print(df.head)
+print(df.head())
