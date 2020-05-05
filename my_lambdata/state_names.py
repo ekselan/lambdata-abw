@@ -7,11 +7,11 @@ def add_state_names(my_df):
     # FL -> Florida, etc
 
     new_frame = my_df.copy()
-    
+
     # list or dict with abbrev/name mappings
-    names_map = {'CA':'Cali', 'CO':'Colo', 
-                'CT':'Conn', 
-                'DC':'District of Columbia'}
+    names_map = {'CA': 'Cali', 'CO': 'Colo',
+                 'CT': 'Conn',
+                 'DC': 'District of Columbia'}
 
     # Create a new column which maps the existing column
     # using our names map
@@ -20,9 +20,10 @@ def add_state_names(my_df):
     new_frame['name'] = new_frame['abbrev'].map(names_map)
     return new_frame
 
+
 if __name__ == "__main__":
-    
-    df = DataFrame({'abbrev':['CA','CO','CT','DC','TX']})
+
+    df = DataFrame({'abbrev': ['CA', 'CO', 'CT', 'DC', 'TX']})
     print(df.head())
 
     df2 = add_state_names(df)
