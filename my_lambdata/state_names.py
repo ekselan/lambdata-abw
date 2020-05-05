@@ -14,9 +14,15 @@ def add_state_names(my_df):
 
     # Create a new column which maps the existing column
     # using our names map
-    breakpoint()
+    # breakpoint()
 
+    new_frame['name'] = new_frame['abbrev'].map(names_map)
     return new_frame
 
+if __name__ == "__main__":
+    
     df = DataFrame({'abbrev':['CA','CO','CT','DC','TX']})
     print(df.head())
+
+    df2 = add_state_names(df)
+    print(df2.head())
