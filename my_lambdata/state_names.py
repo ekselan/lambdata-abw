@@ -3,15 +3,23 @@ from pandas import DataFrame
 
 
 def add_state_names(my_df):
-    # State abbreviation -> Full Name and vice versa
-    # FL -> Florida, etc
+    """
+    Converts a dataframe with a column of state abbreviations,
+    adding a corresponding column of state names
 
-    new_frame = my_df.copy()
-
+    Params: my_df a pandas.DataFrame with a column
+    called 'abbrev'.
+        Example: DataFrame({'abbrev': ['CA', 'CO', 'CT', 'DC', 'TX']})
+    
+    Returns: a pandas.DataFrame with the original col
+    as well as a 'name' column
+    """
+    
+    new_frame = my_df.copy()   
     # list or dict with abbrev/name mappings
-    names_map = {'CA': 'Cali', 'CO': 'Colo',
-                 'CT': 'Conn',
-                 'DC': 'District of Columbia'}
+    names_map = {'CA': 'Cali', 'CO':'Colo', 
+                'CT': 'Conn', 
+                'DC': 'District of Columbia'}
 
     # Create a new column which maps the existing column
     # using our names map
@@ -20,11 +28,12 @@ def add_state_names(my_df):
     new_frame['name'] = new_frame['abbrev'].map(names_map)
     return new_frame
 
-
 if __name__ == "__main__":
-
+    
     df = DataFrame({'abbrev': ['CA', 'CO', 'CT', 'DC', 'TX']})
     print(df.head())
 
     df2 = add_state_names(df)
     print(df2.head())
+
+add_state_names()
