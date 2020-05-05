@@ -12,8 +12,14 @@
 
 class Polo():
     def __init__(self, size, color):
-        print(size)
-        print(color)
+        self.size = size
+        self.color = color
+
+    def wash(self):
+        print('Washing the polo')
+        
+    def fold(self:
+        print('Folding the polo')
         
 
 if __name__ == "__main__":
