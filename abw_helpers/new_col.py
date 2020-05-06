@@ -17,5 +17,5 @@ def new_col(l, data):
     # Turn list into series
     l = pd.Series(l)
     # Add as new column to dataframe
-    self['new_column'] = l
-    return self.head()
+    data['new_column'] = l
+    return data.head()

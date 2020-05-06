@@ -38,15 +38,14 @@ class PlusFrame(DataFrame):
 
 if __name__ == "__main__":
     
-    animals = ['a','b','c','d','e','f']
+    items = ['a','b','c','d','e','f']
     pf = PlusFrame({
         'heroes':['dr strange','spider man','silver surfer','thor','blade','hulk'],
         'villains':['dormamu','mysterio','galactus','ultron','dracula','red hulk']
     })
     print(pf.head())
 
-    print('\n',pf.new_col(animals))
+    print('\n',pf.new_col(items))
 
-    # print('\n',pf.)
+    print('\n',pf.nulls())
 
-    
