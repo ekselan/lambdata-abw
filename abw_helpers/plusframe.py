@@ -31,21 +31,20 @@ class PlusFrame(DataFrame):
 
         Returns: Print out of nulls in dataframe by column
         '''
-        
+
         print('\nNull Totals:\n')
         print(self.isnull().sum().value_counts())
 
 
 if __name__ == "__main__":
-    
-    items = ['a','b','c','d','e','f']
+
+    items = ['a', 'b', 'c', 'd', 'e', 'f']
     pf = PlusFrame({
-        'heroes':['dr strange','spider man','silver surfer','thor','blade','hulk'],
-        'villains':['dormamu','mysterio','galactus','ultron','dracula','red hulk']
+        'heroes': ['dr strange', 'spider man', 'silver surfer', 'thor', 'blade', 'hulk'],
+        'villains': ['dormamu', 'mysterio', 'galactus', 'ultron', 'dracula', 'red hulk']
     })
     print(pf.head())
 
-    print('\n',pf.new_col(items))
+    print('\n', pf.new_col(items))
 
-    print('\n',pf.nulls())
-
+    print('\n', pf.nulls())
