@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setup(
     name="lambdata-abw",  # the name that you will install via pip
-    version="3",
+    version="3.1",
     author="Aaron Watkins Jr",
     author_email="aaron.watkinsjr@gmail.com",
-    description="A short description",
+    description="Helper functions",
     long_description=long_description,
     long_description_content_type="text/markdown",
     # required if using a md file for long desc
