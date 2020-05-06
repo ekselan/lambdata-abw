@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="lambdata-abw",  # the name that you will install via pip
-    version="2.5",
+    version="3",
     author="Aaron Watkins Jr",
     author_email="aaron.watkinsjr@gmail.com",
     description="A short description",
