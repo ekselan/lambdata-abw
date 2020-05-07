@@ -2,13 +2,13 @@ import pytest
 
 def test_upper():
     # self.assertEqual('foo'.upper(), 'FOO')
-    assert 'foo'.upper() == 'FOO'
+    assert('foo'.upper() == 'FOO')
 
 def test_isupper():
     # self.assertTrue('FOO'.isupper())
     # self.assertFalse('Foo'.isupper())
     assert 'FOO'.isupper()
-    assert'Foo'.isupper() == False
+    assert 'Foo'.isupper() == False
 
 def test_split():
     s = 'hello world'
@@ -22,3 +22,7 @@ def test_split():
 
     with pytest.raises(TypeError):
         s.split(2)
+
+
+def test_nothing():
+    print('Hello')
