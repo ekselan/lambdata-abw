@@ -13,5 +13,12 @@ pipenv shell
 ```
 
 ## Usage
-
+```sh
+python -m my_lambdata.my_script
+```
 TODO
+
+## Testing
+```sh
+python -m tests.my_mod_test
+```
