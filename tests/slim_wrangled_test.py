@@ -1,6 +1,7 @@
 
 from my_lambdata.sn_inherit import WrangledFrame
 
+
 def test_add_state_names():
 
     wf = WrangledFrame({"abbrev": ["CA", "CO", "CT", "DC", "TX"]})
@@ -19,5 +20,3 @@ def test_add_state_names():
     # self.assertEqual(wf["abbrev"][0], "CA")
     assert wf['name'][0] == 'Cali'
     assert wf['abbrev'][0] == 'CA'
-
-

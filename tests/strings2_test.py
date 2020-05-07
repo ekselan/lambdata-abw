@@ -1,14 +1,17 @@
 import pytest
 
+
 def test_upper():
     # self.assertEqual('foo'.upper(), 'FOO')
     assert('foo'.upper() == 'FOO')
+
 
 def test_isupper():
     # self.assertTrue('FOO'.isupper())
     # self.assertFalse('Foo'.isupper())
     assert 'FOO'.isupper()
     assert 'Foo'.isupper() == False
+
 
 def test_split():
     s = 'hello world'
@@ -18,7 +21,6 @@ def test_split():
     # # check that s.split fails when the separator is not a string
     # with self.assertRaises(TypeError):
     #     s.split(2)
-
 
     with pytest.raises(TypeError):
         s.split(2)
