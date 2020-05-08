@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from pandas import DataFrame
 
 
@@ -33,7 +34,7 @@ class PlusFrame(DataFrame):
         '''
 
         print('\nNull Totals:\n')
-        print(self.isnull().sum().value_counts())
+        return self.isnull().sum().value_counts()
 
 
 if __name__ == "__main__":
